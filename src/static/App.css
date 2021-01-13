@@ -8,6 +8,14 @@
   gap: 20px;
 }
 
+@media (max-width: 900px) {
+  .App {
+    -ms-grid-columns: (1fr)[1];
+        grid-template-columns: repeat(1, 1fr);
+    padding: 25px 50px;
+  }
+}
+
 .title {
   font-weight: bold;
   margin: 0;
