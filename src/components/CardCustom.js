@@ -25,7 +25,12 @@ export function CardCustom({ article }) {
   const handleClick = () => {
     setActive(!active)
   }
-  var img = article.media[0]["media-metadata"][1].url
+  var img = article.media[0]
+  if (img != undefined) {
+    var url = img["media-metadata"][1].url
+  } else {
+    url = "https://www.baxter.com/assets/images/products/Renal/thumb_image_not_available.png"
+  }
   const jumper = () => {
     window.open(article.url)
   }
@@ -33,7 +38,7 @@ export function CardCustom({ article }) {
     <div className="card-container">
      <Card className={classes.root}>
         <div className="image-container">
-          <CardMedia className={classes.media} image={img} />
+          <CardMedia className={classes.media} image={url} />
           <div className="overlay">
             <Button onClick={jumper} variant="contained" color="primary">
               Read more
