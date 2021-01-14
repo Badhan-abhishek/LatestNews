@@ -26,7 +26,7 @@ export function CardCustom({ article }) {
     setActive(!active)
   }
   var img = article.media[0]
-  if (img != undefined) {
+  if (img !== undefined) {
     var url = img["media-metadata"][1].url
   } else {
     url = "https://www.baxter.com/assets/images/products/Renal/thumb_image_not_available.png"
