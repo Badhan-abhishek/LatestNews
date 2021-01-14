@@ -1,6 +1,11 @@
 # Getting Started with Create React App
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+This uses New York Times API.
+
+# Live Preview
+
+https://goofy-hopper-2588d4.netlify.app/
 
 ## Available Scripts
 
